@@ -84,9 +84,13 @@ h2{
     transform: scaleX(1);
 }
 
-@media screen and (max-height: 660px){
-    .navigation {
-        top: 5rem;
+@media screen and (max-width: 767px){
+    .navigation{
+        flex-direction: column;
+        top: 3rem;
+    }
+    .navigation a{
+        font-size: 1.5rem;
     }
 }
 /* =============ACCUEIL============= */
@@ -110,6 +114,11 @@ h2{
     font-size: 3.5vw;
 }
 
+@media screen and (max-width: 767px){
+    .accueil-title{
+        font-size: 2rem;
+    }
+}
 /* ===============ABOUT=============== */
 .about{
     background-color: black;
@@ -211,7 +220,7 @@ h2{
     height: 40rem;
     text-align: center;
     border: rgb(52, 39, 173) 3px solid;
-    margin-left: rem;
+    margin-left: 1.5rem;
     margin-right: 1.5rem;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
@@ -268,9 +277,28 @@ h2{
 }
 
 @media screen and (max-width: 910px){
-    .projets{
+    .projet{
         flex-direction: column;
+        height: auto;
+        margin-bottom: 2rem; 
     }
+}
+
+@media screen and (max-width: 767px){
+    .projets{
+        padding: 0rem;
+        padding-top: 2rem;
+    }
+    .projet-title{
+        font-size: 1.2rem;
+    }
+    .projet-content{
+        font-size: 0.75rem;
+    }
+    .projet-techno{
+        font-size: 0.90rem;
+    }
+
 }
 /* ==============CONTACT============== */
 
